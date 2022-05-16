@@ -1,4 +1,5 @@
 export const Idioms = {
+  url: 'idioms',
   header: "IDIOMAS",
   data: [
     {

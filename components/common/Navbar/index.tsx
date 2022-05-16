@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import { NavBar } from "../../../constants/Navbar";
 import CartIcon from "../Icons/Cart";
@@ -17,15 +18,18 @@ const Navbar = (): JSX.Element => {
                 setSelectedSection(section.header);
               }}
             >
-              <span
-                className={`h-fit ${
-                  selectedSection == section.header
-                    ? "text-base-blue border-b-2 border-base-blue"
-                    : "text-black"
-                }`}
-              >
-                {section.header}
-              </span>
+              <Link href={`/${section.url}`}>
+                <span
+                  className={`h-fit ${
+                    selectedSection == section.header
+                      ? "text-base-blue border-b-2 border-base-blue"
+                      : "text-black"
+                  }`}
+                  
+                >
+                  {section.header}
+                </span>
+              </Link>
             </div>
           );
         })}

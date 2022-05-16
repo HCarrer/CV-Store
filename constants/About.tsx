@@ -1,4 +1,5 @@
 export const About = {
+  url: 'about',
   header: "SOBRE",
   data: [
     {

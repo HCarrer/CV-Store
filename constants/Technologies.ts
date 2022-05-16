@@ -1,4 +1,5 @@
 export const Technologies = {
+  url: 'technologies',
   header: "TECNOLOGIAS",
   data: [
     {

@@ -1,4 +1,5 @@
 export const Experiences = {
+  url: 'experiences',
   header: "EXPERIÊNCIAS",
   data: [
     {
