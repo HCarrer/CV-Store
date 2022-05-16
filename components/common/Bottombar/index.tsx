@@ -44,7 +44,7 @@ const BottomBar = (): JSX.Element => {
             <span className="inline-block align-middle text-xs font-light">
               {AuthorIntroduction}
             </span>
-            <SeparatorBar className="bg-base-blue h-1 w-full"/>
+            <SeparatorBar className="bg-base-blue h-1 w-full" />
             <span className="inline-block align-middle text-xl font-normal">
               {AuthorName}
             </span>
