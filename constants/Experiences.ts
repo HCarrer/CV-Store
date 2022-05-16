@@ -1,5 +1,5 @@
 export const Experiences = {
-  url: 'experiences',
+  url: "experiences",
   header: "EXPERIÊNCIAS",
   data: [
     {

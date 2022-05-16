@@ -1,5 +1,5 @@
 export const About = {
-  url: 'about',
+  url: "about",
   header: "SOBRE",
   data: [
     {

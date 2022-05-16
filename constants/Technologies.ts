@@ -1,5 +1,5 @@
 export const Technologies = {
-  url: 'technologies',
+  url: "technologies",
   header: "TECNOLOGIAS",
   data: [
     {

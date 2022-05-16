@@ -1,8 +1,10 @@
+import Link from "next/link";
 import {
   AuthorIntroduction,
   AuthorName,
   BottomBarMainTexts,
   BottomBarSubTexts,
+  CART,
 } from "../../../constants/Bottombar";
 import Logo from "../Icons/Logo";
 import SeparatorBar from "../SeparatorBar";
@@ -15,24 +17,43 @@ const BottomBar = (): JSX.Element => {
           <div className="flex gap-x-8 align-right">
             {BottomBarMainTexts.map((text) => {
               return (
-                <span
-                  key={text}
-                  className="hover:text-base-blue cursor-pointer"
+                <Link
+                  key={text.header}
+                  href={text.url}
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  {text}
-                </span>
+                  <span className="hover:text-base-blue cursor-pointer">
+                    {text.header}
+                  </span>
+                </Link>
               );
             })}
           </div>
           <div className="flex gap-x-8 align-right">
             {BottomBarSubTexts.map((text) => {
-              return (
-                <span
-                  key={text}
-                  className="hover:text-base-blue cursor-pointer"
+              return text.header == CART.header ? (
+                <Link
+                  key={text.header}
+                  href={text.url}
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  {text}
-                </span>
+                  <span className="hover:text-base-blue cursor-pointer">
+                    {text.header}
+                  </span>
+                </Link>
+              ) : (
+                <a
+                  key={text.header}
+                  href={text.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="hover:text-base-blue cursor-pointer">
+                    {text.header}
+                  </span>
+                </a>
               );
             })}
           </div>

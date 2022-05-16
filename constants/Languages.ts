@@ -1,5 +1,5 @@
 export const Languages = {
-  url: 'languages',
+  url: "languages",
   header: "LINGUAGENS",
   data: [
     {

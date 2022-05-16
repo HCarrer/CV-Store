@@ -25,7 +25,6 @@ const Navbar = (): JSX.Element => {
                       ? "text-base-blue border-b-2 border-base-blue"
                       : "text-black"
                   }`}
-                  
                 >
                   {section.header}
                 </span>
