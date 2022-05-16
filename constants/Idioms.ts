@@ -1,9 +1,9 @@
 export const Idioms = {
-  header: 'IDIOMAS',
+  header: "IDIOMAS",
   data: [
     {
-      name: 'REACT',
-      level: 3.5
-    }
-  ]
-}
+      name: "REACT",
+      level: 3.5,
+    },
+  ],
+};

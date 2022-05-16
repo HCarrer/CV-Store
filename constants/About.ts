@@ -1,9 +1,9 @@
 export const About = {
-  header: 'SOBRE',
+  header: "SOBRE",
   data: [
     {
-      name: 'REACT',
-      level: 3.5
-    }
-  ]
-}
+      name: "REACT",
+      level: 3.5,
+    },
+  ],
+};

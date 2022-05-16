@@ -1,9 +1,9 @@
 export const Languages = {
-  header: 'LINGUAGENS',
+  header: "LINGUAGENS",
   data: [
     {
-      name: 'REACT',
-      level: 3.5
-    }
-  ]
-}
+      name: "REACT",
+      level: 3.5,
+    },
+  ],
+};

@@ -1,9 +1,9 @@
 export const Experiences = {
-  header: 'EXPERIÊNCIAS',
+  header: "EXPERIÊNCIAS",
   data: [
     {
-      name: 'REACT',
-      level: 3.5
-    }
-  ]
-}
+      name: "REACT",
+      level: 3.5,
+    },
+  ],
+};
