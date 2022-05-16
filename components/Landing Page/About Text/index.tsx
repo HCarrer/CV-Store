@@ -1,16 +1,10 @@
-import SeparatorBar from "../../common/SeparatorBar.tsx";
+import SeparatorBar from "../../common/SeparatorBar";
 
 const AboutText = (): JSX.Element => {
   return (
     <div className="flex flex-col justify-center items-center h-fit w-[650px] mx-auto">
       <span className="text-5xl">SOBRE O PROJETO</span>
-      <SeparatorBar
-        direction="horizontal"
-        color="blue"
-        width={1}
-        margin={5}
-        length="4/5"
-      />
+      <SeparatorBar className="bg-base-blue w-4/5 my-5 h-1" />
       <div className="px-20 flex flex-col items-center gap-y-3">
         <span className="text-center text-sm">
           QUAL A SEMELHANÇA ENTRE UM CURRÍCULO E UMA LOJA?

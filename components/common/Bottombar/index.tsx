@@ -5,7 +5,7 @@ import {
   BottomBarSubTexts,
 } from "../../../constants/Bottombar";
 import Logo from "../Icons/Logo";
-import SeparatorBar from "../SeparatorBar.tsx";
+import SeparatorBar from "../SeparatorBar";
 
 const BottomBar = (): JSX.Element => {
   return (
@@ -37,20 +37,14 @@ const BottomBar = (): JSX.Element => {
             })}
           </div>
         </div>
-        <SeparatorBar
-          direction="vertical"
-          color="blue"
-          width={1}
-          margin={8}
-          length="20"
-        />
+        <SeparatorBar className="bg-base-blue w-1 mx-8 h-20" />
         <div className="flex items-center gap-x-5">
           <Logo width={50} height={50} />
           <div className="h-fit">
             <span className="inline-block align-middle text-xs font-light">
               {AuthorIntroduction}
             </span>
-            <SeparatorBar direction="horizontal" color="blue" width={1} />
+            <SeparatorBar className="bg-base-blue h-1 w-full"/>
             <span className="inline-block align-middle text-xl font-normal">
               {AuthorName}
             </span>

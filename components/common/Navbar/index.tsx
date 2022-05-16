@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { NavBar } from "../../../constants/Navbar";
-import { Technologies } from "../../../constants/Technologies";
 import CartIcon from "../Icons/Cart";
 import Logo from "../Icons/Logo";
 
